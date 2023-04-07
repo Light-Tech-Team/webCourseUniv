@@ -1,6 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import{Add } from '../../../../add';
+import{Add } from '../../../shraed/add';
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
