@@ -1,14 +1,19 @@
  
-from .field import product_resource_fields
+from .field import speciality_resource_fields,Module_resource_fields
 from flask_restful import Resource, marshal_with
 
-from models import Product
+from models import SpecialityModel,ModuleModel
 
-class product(Resource):
+class Speciality_id(Resource):
     
-    @marshal_with(product_resource_fields)
-    def get(self, product_id):
-        print(product_id)
-        product = Product.query.filter_by(id=product_id).all()
-        print(product)
-        return product, 201
+    @marshal_with(speciality_resource_fields)
+    def get(self, deg):
+        speciality = SpecialityModel.query.filter_by(degree=deg).all()
+        return speciality, 201
+
+class SpecialityModule_id(Resource):
+    
+    @marshal_with(Module_resource_fields)
+    def get(self, spe):
+        Modules = ModuleModel.query.filter_by(idSpeciality=spe).all()
+        return Modules, 201

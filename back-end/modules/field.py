@@ -1,13 +1,14 @@
 from flask_restful import fields
 
 
-product_resource_fields = {
+speciality_resource_fields = {
     'id': fields.Integer,
-    'NAME': fields.String,
-    'PRICE_SELL': fields.Float,
-    'PRICE_BUY': fields.Float,
-    #'description': fields.String,
-    #'image': fields.String,
-    'CODE': fields.String,
-    'ID_FAMILY': fields.Integer
+    'nameSpeciality': fields.String,
+    'degree': fields.Integer,
+}
+
+Module_resource_fields = {
+    'id': fields.Integer,
+    'nameModule': fields.String,
+    'semester': fields.Integer,
 }
