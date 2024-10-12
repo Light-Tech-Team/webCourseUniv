@@ -1,4 +1,4 @@
-from flask_restful import fields
+from flask_restful import fields ;
 
 
 speciality_resource_fields = {
@@ -12,3 +12,5 @@ Module_resource_fields = {
     'nameModule': fields.String,
     'semester': fields.Integer,
 }
+
+
