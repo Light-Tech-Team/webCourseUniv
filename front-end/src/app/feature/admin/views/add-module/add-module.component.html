@@ -1,0 +1,126 @@
+<div class="has-background-dark columns"style="width: 160vh; height:100vh">
+    <div class="column is-4"></div>
+    <div class="column is-4">
+        <h1 class="title mx-2 has-text-white "  style="padding: 2% 0% 1% 18%; ">Ajouter module</h1>
+        <div class="card">
+          <div class="card-content">
+              <div class="content">
+                    <div class="field">
+                        <label class="label">Nom</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Text input">
+                        </div>
+                    </div>
+          
+          
+         
+          
+          
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                              <input type="radio" name="degreeg">
+                              Master
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="degreeg">
+                              Licence
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Speciality</label>
+                      <div class="columns">
+                      <div class="control column">
+                            <div class="select">
+                              <select>
+                                    <option>MAT</option>
+                                    <option>INF</option>
+                              </select>
+                            </div>
+                      </div>
+                      <button class="button is-info column" style="margin: 4% 0% 1% 0%; " (click)="Ajouter()">Ajouter Speciality</button>
+                    </div>
+
+                   </div>
+
+                   <div *ngIf="spevis"  >
+                    
+                    <div class="columns">
+                   <div  class="field">
+                    <div class="control column">
+                        <input class="input" type="text" placeholder="Text input">
+                    </div>
+                   </div>
+                   <button class="button is-info column" style="margin: 4% 0% 1% 0%; " (click)="Enregister()">Enregister</button>
+
+                  </div>
+
+                  
+                  <div class="field">
+                    <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="degree">
+                          Master
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="degree">
+                          Licence
+                        </label>
+                    </div>
+                </div>
+
+                   <div class="field">
+                    <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="Annee">
+                          1er
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="Annee">
+                          2eme
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="Annee">
+                          3eme
+                        </label>
+                    </div>
+               </div>
+
+               <div class="field" style="margin: 0% 0% 6% 0%; ">
+                <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="semestre">
+                      1er semestre
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="semestre">
+                      2eme semestre
+                    </label>
+                   
+                </div>
+                </div>
+
+
+
+                  </div>
+      
+
+
+                   
+          
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Ajouter</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-link is-light">Annuler</button>
+                        </div>
+                    </div>
+              </div>
+          </div>
+        </div>
+    </div>    
+    <div class="column is-4"></div>
+</div>
+
