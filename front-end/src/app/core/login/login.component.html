@@ -1,0 +1,47 @@
+<header class="card-header"></header>
+
+<ng-template #loading>
+<div  class="card" style="margin: 10% 10%;">
+  <div class="card-content" >
+    <div class="content has-background-dark columns" style="padding: 10%;" >
+      <button class="button is-primary column" (click)="etudient()" style="margin: 5%;">Etudient</button>
+      <button class="button is-link column"(click)="admin()" style="margin: 5%;">Admin</button>
+      <button class="button is-warning column" (click)="enseignant()"style="margin: 5%;">Enseignant</button>
+
+      
+    </div>
+  </div>
+</div>
+
+</ng-template>
+
+<div class="card" *ngIf="lien else loading" style="margin: 10% 10%;">
+    <div class="card-content" >
+      <div class="content has-background-dark" style="padding: 10%;" >
+        <div class="field" >
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+        
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left">
+              <input class="input" type="password" placeholder="Password">
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control">
+              <button class="button is-success" (click)="navigate()">
+                connecter
+              </button>
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
