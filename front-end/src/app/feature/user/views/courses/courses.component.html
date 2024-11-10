@@ -1,0 +1,52 @@
+
+<div class="columns" style="margin: 0% 10% ; padding: 2%" >
+    <div class="column is-one-fifth"></div>
+    <div class="card column">
+      <div class="card-content">
+      <div class="content columns has-background-dark">
+          <h1 class="title column has-text-white ">Spicialitie</h1>
+          <div class="column">
+            <app-dropdown [title]="couresViewModels.De[0].nameDegree"
+                          [items]="couresViewModels.De[0].Speciality"
+                          (lien)="getIdsp($event)"
+            
+            ></app-dropdown> 
+          </div> 
+          <div class="column">
+            <app-dropdown [title]="couresViewModels.De[1].nameDegree"
+                          [items]="couresViewModels.De[1].Speciality "
+                          (lien)="getIdsp($event)"
+            ></app-dropdown> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-fifth"></div>
+      
+</div>
+
+
+
+<div class="columns" style="margin: 2% 10% ; padding:2%" >
+  <div class="column is-one-fifth"></div>
+  <div class="card column">
+    <div class="card-content">
+      <div class="content columns has-background-dark">
+        <h1 class="title column has-text-white ">Année</h1>
+        <div class="column">
+          <div class="column is-one-third">
+            <app-dropdown [title]="couresViewModels.De[0].Speciality[id1-1]"
+                          [items]="i"
+                          (lien)="getIdy($event)"
+            ></app-dropdown> 
+          </div> 
+        </div> 
+     
+      </div>
+    </div>
+  </div>
+  <div class="column is-one-fifth"></div>
+    
+</div>
+
+<app-curriculum *ngIf="id1 && id2" [id1]="id1" [id2]="id2" ></app-curriculum> 
