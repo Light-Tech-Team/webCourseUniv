@@ -1,0 +1,25 @@
+
+<!-- <div class="columns"  style="margin: 15% 10%;text-align: center;" >
+<table class="table is-fullwidth is-bordered"
+     *ngFor="let row of couresViewModels.SpecialityItemModel ; let i = index "     >
+    <thead >
+  <tr>
+    <td><b><p> Semester {{i+1}}</p></b></td>
+  </tr>
+    </thead>
+
+    <tbody>
+      <tr><td>
+            <b>
+                <ul *ngFor="let col of row; let j = index " >
+                    <li ><a [routerLink]="['modules-course/', j]" > {{col.nameModule}}</a></li>      
+                </ul>
+             </b>
+            </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+<div class="mx-2" style="padding: 10% 20%; " >
+<app-table [head]="couresViewModels.semester" [bodyVertical]="couresViewModels.nameModumes" ></app-table>
+</div>
